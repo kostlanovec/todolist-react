@@ -10,7 +10,6 @@ input{
 body {
   background: #333;
   color: hsl(200, 100%, 90%);
-  max-width: 400px;
   padding: 1rem;
   margin: 0 auto;
 }
@@ -18,13 +17,14 @@ body {
 .new-item-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
 }
 
 .form-row {
   display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
+  gap: 1rem;
+  max-width: 500px;
 }
 
 .btn {
@@ -70,6 +70,7 @@ body {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+  text-align:center;
 }
 
 .list {
@@ -92,6 +93,7 @@ body {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  width: fit-content;
 }
 
 .list li label {
@@ -106,7 +108,7 @@ body {
 }
 
 .list li input {
-  outline: none;
+  display: none;
 }
 
 .list li label::before {
